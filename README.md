@@ -10,18 +10,15 @@
 
 **Operating system:** Microsoft Windows
 
-Run `ipconfig` in Command Prompt or PowerShell and inspect the active Wi-Fi or Ethernet adapter. Do not paste the full output into this public repository.
-
 - **Local IPv4 address:** Checked locally; not published here for privacy.
 - **Default gateway/router:** Checked locally; not published here for privacy.
-- **IPv4 classification:** [Replace with “private” or “public” based on the address you observed.]
+- **IPv4 classification:** “private” 
 
 Private IPv4 ranges are:
 - `10.0.0.0` through `10.255.255.255`
 - `172.16.0.0` through `172.31.255.255`
 - `192.168.0.0` through `192.168.255.255`
 
-An address in one of these ranges is private. `ipconfig` normally shows your computer's local address, not necessarily the public IP address used by your internet connection.
 
 ## Task 2 — Practice Subnetting
 
@@ -114,34 +111,4 @@ The completed policy is in [`s3-read-policy.json`](s3-read-policy.json).
 4. **A website responds with HTTP `404`.** Investigate the **HTTP/application** layer: check the URL/path and whether the resource exists on the server.
 5. **An EC2 application can reach Amazon S3 but receives `AccessDenied` when reading an object.** Investigate **IAM/S3 authorization**: the identity used by the application, its effective permissions, the object ARN, bucket policies or explicit denies, and relevant encryption-key permissions if applicable.
 
-## Evidence
 
-The lab allows screenshots to be optional if the README evidence is sufficient. If adding screenshots, place them in `evidence/` and make sure they do not expose private network details or credentials.
-
-Suggested files:
-- `evidence/dns-lookup.png` — screenshot of your `nslookup example.com` output.
-- `evidence/https-response.png` — screenshot of your `curl.exe -I https://example.com` output.
-
-Screenshots are not included in this package because they should show results from your own computer. Add them if you want to provide visual evidence.
-
-## Final Checklist
-
-- [ ] Enter your name and completion date.
-- [ ] Confirm the local IPv4 classification from `ipconfig`; do not publish sensitive network details.
-- [ ] Run `nslookup example.com` and record the actual result.
-- [ ] Open `https://example.com`, run `curl.exe -I https://example.com`, and record the actual result.
-- [ ] Review the subnet calculations and all task answers.
-- [ ] Confirm `s3-read-policy.json` is valid JSON.
-- [ ] Check that no passwords, AWS access keys, tokens, MAC addresses, or unnecessary private network details are included.
-- [ ] Upload the files to GitHub.
-- [ ] Submit the repository URL in the Week 2 section of the Cloud & DevOps track sheet.
-
-## Windows Commands
-
-Run these one at a time in Command Prompt or PowerShell:
-
-```powershell
-ipconfig
-nslookup example.com
-curl.exe -I https://example.com
-```
