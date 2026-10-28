@@ -5,7 +5,6 @@
 **Date completed:** October 28, 2026 
 **Track:** Cloud & DevOps
 
-> **Before submission:** The conceptual answers and subnet calculations below are completed. Run the three commands listed in the evidence section on your own Windows computer and replace the clearly marked result fields with what your computer actually shows. Do not invent results or publish your exact local IP address, MAC address, Wi-Fi name, passwords, AWS keys, tokens, or other secrets.
 
 ## Task 1 — Identify Your Network Information
 
