@@ -1,0 +1,8 @@
+# Keep credentials and local-only files out of GitHub
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.DS_Store
+Thumbs.db
