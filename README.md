@@ -3,8 +3,11 @@
 ## Networking & IAM Fundamentals
 
 **Name:** Bontu Bekele
+
 **Date Completed:** November 2, 2026
+
 **Track:** Cloud & DevOps
+
 **Lab Type:** Individual Hands-on Exercise
 
 ---
